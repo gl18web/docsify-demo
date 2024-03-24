@@ -7,8 +7,25 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
 </head>
 <body>
+  <!--评论-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Github Application Client ID',
+      clientSecret: 'Github Application Client Secret',
+      repo: 'Github repo',
+      owner: 'Github repo owner',
+      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+
   <!-- 搜索插件 -->
   <script>
     window.$docsify = {
@@ -43,10 +60,24 @@
 
   <!-- 代码高亮插件（暂不支持java、c）-->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <!--侧栏-->
+  <script>
+    window.$docsify = {
+      //  loadSidebar: true,
+      //  subMaxLevel: 2,
+      //  loadNavbar: true
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
 
 
   <nav><a href="home.gl18cloud.asia">桂林市第十八中学信息社官网（施工中）</a><div id="app"></div></nav>
   <div id="app"></div>
+
+
   <script>
     window.$docsify = {
       name: '共享帮助文档',
