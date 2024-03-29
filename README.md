@@ -1,3 +1,5 @@
+
+
 # 这是一个信息帮助网站
 
 欢迎来到十八中帮助页面
@@ -15,6 +17,25 @@
 > **[!重要]**
 >
 > **编辑前先git一下库，并在提交GitHub前在群里说明，以免顶掉文件。**
+
+
+
+------
+
+## Typora的运用
+
+### 激活方法
+
+打开安装目录找到\Typora\resources\page-dist\static\js\LicenseIndex.180dd4c7.5c394f9a.chunk.js文件
+
+用记事本打开，搜索关键代码e.hasActivated=“true”
+
+![typora激活](D:\docsify\docsify-demo-master\img\typora激活.png)
+
+将搜索到的位置的【e.hasActivated="true"==】 后面添加 【"true",】
+即：e.hasActivated="true"=="true",
+
+### 基本操作
 
 
 
