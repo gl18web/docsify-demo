@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png">
   <link rel="manifest" href="static/icon/site.webmanifest">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 <body>
   <div id="app"></div>
@@ -29,6 +30,7 @@
       loadNavbar: true,
       loadSidebar: true,
       autoHeader: true,
+      alias:{'/.*/_sidebar.md': '/_sidebar.md'},
       onlyCover: false,
       routerMode: 'hash',
       subMaxLevel: 6,
@@ -296,5 +298,10 @@
   <!-- docsify pdf embed -->
   <script src="//gcore.jsdelivr.net/npm/pdfobject@2.2.8/pdfobject.min.js"></script> 
   <script src="//gcore.jsdelivr.net/npm/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+
 </body>
 </html>
