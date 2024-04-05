@@ -18,13 +18,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png">
   <link rel="manifest" href="static/icon/site.webmanifest">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<!--<script src='//unpkg.com/valine/dist/Valine.min.js'></script>-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '十八中帮助页面<span class="mg-badge">0.0.1</span>',
+      name: '十八中帮助页面<span class="mg-badge">0.0.2</span>',
       repo: 'https://github.com/gl18web/docsify-demo',
       coverpage: false,
       loadNavbar: true,
@@ -231,6 +233,14 @@
       // ]
     }
   </script>
+  <!--<div id="comments"></div>
+  <script>
+    new Valine ({
+      el:'#comments',
+      appid: 'thM4GqnuvWHxosixPYXcyjAe-gzGzoHsz',
+      appkey: 'AAGDRy18ca9GqknRw2ZskSmF',
+    })
+  </script>-->
   <script src="//gcore.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//gcore.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.js"></script>
@@ -246,9 +256,9 @@
   <script src="//gcore.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- 侧边栏扩展与折叠 -->
   <script src="//gcore.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <!-- valine -->
+  <!-- valine 
   <script src='//gcore.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-  <script src="https://gcore.jsdelivr.net/npm/docsify-mango-valine@1.1.1/dist/docsify-mango-valine.min.js"></script>
+  <script src="https://gcore.jsdelivr.net/npm/docsify-mango-valine@1.1.1/dist/docsify-mango-valine.min.js"></script>-->
   <!-- busuanzi -->
   <script src="https://gcore.jsdelivr.net/npm/docsify-busuanzi@1.0.1/dist/docsify-busuanzi.min.js"></script>
   <!-- 页脚信息 -->
@@ -302,6 +312,28 @@
 
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
+  <!--gittalk-->
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+    clientID: '125ec2c605fdb33da143',
+    clientSecret: '2a996d9d5f8f2b11626076f242156a7eed3c7687',
+    repo:'talk-demo',
+    owner:bzmdqz,
+    admin: ['bzmdqz'],
+    // facebook-like distraction free mode
+    distractionFreeMode: true,
+    id: window.location.pathname,
+  })
+  gitalk.render('gitalk-container');
+  window.onhashchange = function (event) {
+	if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+		location.reload()
+	  }
+  } 
+  </script>
 
 </body>
 </html>
