@@ -321,18 +321,14 @@
     clientID: '125ec2c605fdb33da143',
     clientSecret: '2a996d9d5f8f2b11626076f242156a7eed3c7687',
     repo:'talk-demo',
-    owner:bzmdqz,
+    owner:'bzmdqz',
     admin: ['bzmdqz'],
     // facebook-like distraction free mode
     distractionFreeMode: true,
     id: window.location.pathname,
   })
-  gitalk.render('gitalk-container');
-  window.onhashchange = function (event) {
-	if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
-		location.reload()
-	  }
-  } 
+
+  
   </script>
 
 </body>
