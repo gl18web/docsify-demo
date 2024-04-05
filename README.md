@@ -131,7 +131,7 @@ git remote add可以添加一个远程仓库，其命令格式如下：
 git remote add [alias] [url]
 ```
 
-参数[alias]为别名， [url]为远程仓库的地址，如：我们可以将https://github.com/gl18web/docsify-demo.git仓库添加到本地，并命名为test
+参数[alias]为别名， [url]为远程仓库的地址，如：我们可以将  https://github.com/gl18web/docsify-demo.git   仓库添加到本地，并命名为test
 
 ```
 git remote add test https://github.com/gl18web/docsify-demo.git
@@ -151,3 +151,6 @@ git push [alias] [branch]
 git push test master
 ```
 
+#### ssh密钥的设置
+
+这个自己上网搜，懒得讲。不会就直接在网页端上传
