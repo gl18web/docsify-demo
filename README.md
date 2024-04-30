@@ -73,14 +73,16 @@
 
 1.打开git bash进行设置
 
-```git bash
+```git
+git bash
 git config --global user.name '你的用户名'
 git config --global user.email '你的邮箱'
 ```
 
 2.在你要创建工程的目标文件夹内运行以下命令，来初始化git仓库
 
-```git bash
+```git
+git bash
 git init
 ```
 
@@ -88,25 +90,25 @@ git init
 
 3.使用git clone命令可以从Git仓库拷贝项目，类似于SVN中的 svn checkout，命令格式为：
 
-```
+```git
 git clone <url> [directory]
 ```
 
 url为git仓库地址，directory为本地目录，比如，要克隆某个Git 代码仓库，可以用下面的命令：
 
-```
+```git
 git clone git://github.com/xxxxx/xxxx.git
 ```
 
 执行完成之后会在当前目录下生成仓库，如果要指定目录下生成，则可以在后面加一个具体的位置路径，如：
 
-```
+```git
 git clone git://github.com/xxxxx/xxxx.git newgit
 ```
 
  git clone 时，可以用不同的协议，包括 ssh, git, https 等，其中最常用的是 ssh，因为速度较快，还可以配置公钥免输入密码，各种写法格式如下：
 
-```
+```git
 git clone git@github.com/schacon/grit.git         --SSH协议
 git clone git://github.com/schacon/grit.git       --GIT协议
 git clone https://github.com/schacon/grit.git     --HTTPS协议
@@ -129,13 +131,13 @@ git clone https://github.com/schacon/grit.git     --HTTPS协议
 
 git remote add可以添加一个远程仓库，其命令格式如下：
 
-```
+```git
 git remote add [alias] [url]
 ```
 
 参数[alias]为别名， [url]为远程仓库的地址，如：我们可以将  https://github.com/gl18web/docsify-demo.git   仓库添加到本地，并命名为test
 
-```
+```git
 git remote add test https://github.com/gl18web/docsify-demo.git
 ```
 
@@ -143,13 +145,13 @@ git remote add test https://github.com/gl18web/docsify-demo.git
 
 git push 推送你的新分支与数据到某个远端仓库命令，格式如下：
 
-```
+```git
 git push [alias] [branch]
 ```
 
 如：我们可以将前面提交的文件push到远程仓库中：
 
-```
+```git
 git push test master
 ```
 

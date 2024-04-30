@@ -14,7 +14,7 @@
 
 安装完毕后，可以打开cmd输入以下命令检测是否安装成功
 
-```
+```cmd
 node -v     							// 显示node.js版本
 npm -v      							// 显示npm版本
 ```
@@ -124,7 +124,7 @@ docs/book/guide.md   => http://domain.com/book/guide
 
 这个时候我们可以对侧边栏进行以下定制，这里以本工程为例
 
-```
+```md
 - [更新记录](/book/更新日志.md)
 - [礼堂舞台的后台操作](/book/调音台.md)
   - [调音台](/book/调音台.md)
