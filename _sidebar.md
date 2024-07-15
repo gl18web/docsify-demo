@@ -7,3 +7,10 @@
 - [编程入门必看](/book/编程前置知识.md)
 
 - [视频制作入门](/book/做视频.md)
+
+- [JAVA入门](/book/JAVA/)
+	- [基础知识](/book/JAVA/java1.md)
+	- [数组](/book/JAVA/数组.md)
+	- [循环高级](/book/JAVA/循环高级.md)
+	- [流程控制语句](/book/JAVA/day04-流程控制语句)
+
