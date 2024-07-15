@@ -8,7 +8,7 @@
 
 - [视频制作入门](/book/做视频.md)
 
-- [JAVA入门](/book/JAVA/)
+- [JAVA入门](/book/JAVA/Untitled.md)
 	- [基础知识](/book/JAVA/java1.md)
 	- [数组](/book/JAVA/数组.md)
 	- [循环高级](/book/JAVA/循环高级.md)
